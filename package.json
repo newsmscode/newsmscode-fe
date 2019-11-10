@@ -1,0 +1,70 @@
+{
+  "name": "newsmscode-fe",
+  "version": "1.0.0",
+  "description": "短信验证码接收程序",
+  "main": "index.js",
+  "author": "newsmscode",
+  "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
+  
+  "scripts": {
+    "dev": "node index.js",
+    "debug": "node index.js --debug --inspect-brk",
+    "build": "next build",
+    "start": "NODE_ENV=production node index.js"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/styles": "^4.5.0",
+    "axios": "^0.19.0",
+    "babel-plugin-react-intl": "^4.1.20",
+    "clsx": "^1.0.4",
+    "express": "^4.17.1",
+    "intl": "^1.2.5",
+    "mobx": "^5.14.2",
+    "mobx-react": "^6.1.4",
+    "mobx-state-tree": "^3.14.1",
+    "next": "^9.1.1",
+    "notistack": "^0.9.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-intl": "^3.3.2",
+    "react-spring": "^8.0.27"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@types/react": "^16.9.9",
+    "@zeit/next-css": "^1.0.1",
+    "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "styled-jsx-plugin-less": "0.0.1-alpha.2",
+    "styled-jsx-plugin-sass": "^1.0.0",
+    "typescript": "^3.6.4"
+  },
+  "babel": {
+    "presets": [
+      "next/babel"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ]
+    ]
+  }
+}
