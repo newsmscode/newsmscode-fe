@@ -7,7 +7,6 @@ const devConfig = require('./config/config.dev')
 
 const { flatObject } = require('./utils/common-utils')
 
-const port = process.env.PORT || opsConfig.DEFUALT_PORT || 3000
 const isProd = process.env.NODE_ENV === 'production'
 
 const app = next({ dev: !isProd })
@@ -66,11 +65,11 @@ app.prepare().then(() => {
   })
 
   // 开启监听
-  server.listen(port, error => {
+  server.listen(opsConfig.DEFUALT_PORT, error => {
     if (error) {
       throw error
     }
 
-    console.log(`Ready on http://localhost:${port}`)
+    console.log(`Ready on http://localhost:${opsConfig.DEFUALT_PORT}`)
   })
 })
